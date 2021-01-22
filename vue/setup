@@ -1,0 +1,11 @@
+### setup
+
+setup(props, context) {
+  // props-未组件声明是的props对象，context 是一个 JavaScript 对象
+  如需结构可使用 toRefs函数
+
+  return{
+  // 此处可放置变量，函数，ref()。。。
+  // return中的内容可以在template中使用
+  }
+}
