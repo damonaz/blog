@@ -1,0 +1,10 @@
+## 问题：WebView 加载失败（net::ERR_CLEARTEXT_NOT_PERMITTED）
+
+### 原因：从Android 9.0（API级别28）开始，默认限制了对未加密地址不再信任，因此http的url无法在webview中加载，https 不受影响。
+
+```
+<application
+   ...
+   android:usesCleartextTraffic="true"
+  ...>
+```
