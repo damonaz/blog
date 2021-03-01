@@ -8,3 +8,11 @@
    android:usesCleartextTraffic="true"
   ...>
 ```
+第一种需求：只需要使用本地的图片资源
+<input id="upload" type="file" accept="image/*;" class="abc">
+
+第二种需求：只需要使用相机拍照功能
+<input id="upload" type="file" accept="image/*" capture="camera" class="abc">
+
+第三种需求：本地图片 +  拍照
+<input id="upload" type="file" accept="image/*" class="abc">
