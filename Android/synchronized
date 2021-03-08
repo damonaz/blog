@@ -1,28 +1,29 @@
 
 class SyncCls{
 
-	
-
 	public synchronized void method1() {
       	// tudo
    	}
 
-   	public void method(){
+   	public void method2(){
    		synchronized(this) {
       		// todo
    		}
 	}
-
+	
+	// method1 与 method2 等效
 
    	public synchronized static void method3() {
-      // tudo
+      		// tudo
    	}
 
 	public static void method4() {
-      	synchronized(SyncCls.class) {
-         
-      	}
+		synchronized(SyncCls.class) {
+
+		}
    	}
+	
+	// method3 与 method4 等效
 }
 
 在用synchronized修饰方法时要注意以下几点：
